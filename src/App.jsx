@@ -26,7 +26,7 @@ function App() {
   const handleQuantityChange = (itemId, amount) => {
     setQuantities((prevQuantities) => {
 
-      console.log(prevQuantities);
+      console.log('prevQuantities ;',prevQuantities);
       const newQuantities = { ...prevQuantities, [itemId]: prevQuantities[itemId] + amount };
       updateTotalPrice(newQuantities);
       return newQuantities;
